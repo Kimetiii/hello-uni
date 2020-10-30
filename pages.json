@@ -3,14 +3,52 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "index"
+			}
+		},
+		{
+			"path": "pages/contact/contact",
+			"style": {
+				"navigationBarTitleText": "contact"
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "message"
 			}
 		}
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
+		"enablePullDownRefresh":true,
+		"backgroundTextStyle":"light",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#3F536E",
+		"selectedColor": "#007AFF",
+		"backgroundColor": "#e8e8e8",
+		"borderStyle": "white",
+		"list": [{
+			"text": "portal",
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tabs/index.png",
+			"selectedIconPath": "static/tabs/index-active.png"
+		},
+		 {
+		 	"text": "contact",
+		 	"pagePath": "pages/contact/contact",
+		 	"iconPath": "static/tabs/contact.png",
+		 	"selectedIconPath": "static/tabs/contact-active.png"
+		 },
+		 {
+		 	"text": "message",
+		 	"pagePath": "pages/message/message",
+		 	"iconPath": "static/tabs/message.png",
+		 	"selectedIconPath": "./static/tabs/message-active.png"
+		 }]
 	}
 }
